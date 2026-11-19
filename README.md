@@ -1,3 +1,7 @@
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/Eganid/little-heron-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/Eganid/little-heron-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
 # Little Heron — a 4 KB chess engine
 
 Entry for the make.fun bounty "Build the strongest chess engine in
@@ -8,7 +12,6 @@ Entry for the make.fun bounty "Build the strongest chess engine in
 - `main.py` — the whole engine (4,080 bytes), packed by the kit's
   `node cli/makefun.mjs compress` from a readable Python source that
   the submission's transcript bundle carries beside the sessions.
-- `README.md` — this file.
 
 ## How it plays
 
@@ -48,5 +51,5 @@ Evaluation is material plus piece-square tables (pawn 100, knight
 320, bishop 330, rook 500, queen 900); the tables are left-right
 symmetric, so the source stores files a–d only, and only the
 king's table is blended toward its endgame table as the phase
-falls. Measured at 24,000–32,000 nodes a second, a full-budget
-move takes at most about 2.8 seconds.
+falls. At 24,000–32,000 nodes a second, a full-budget move
+takes at most ~2.8 seconds.
